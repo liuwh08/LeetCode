@@ -1,9 +1,9 @@
 CC=clang++
 CFLAGS=-c -Wall
 LDFLAGS=
-SOURCES=TwoSum.cpp TwoSum_Test.cpp
+SOURCES=findMedianSortedArrays.cpp findMedianSortedArrays_Test.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=TwoSum
+EXECUTABLE=findMedianSortedArrays
 
 all: $(SOURCES) $(EXECUTABLE)
 
