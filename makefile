@@ -1,9 +1,9 @@
 CC=clang++
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -std=c++11
 LDFLAGS=
-SOURCES=findMedianSortedArrays.cpp findMedianSortedArrays_Test.cpp
+SOURCES=$(EXECUTABLE).cpp $(EXECUTABLE)_Test.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=findMedianSortedArrays
+EXECUTABLE=addTwoNumbers
 
 all: $(SOURCES) $(EXECUTABLE)
 
