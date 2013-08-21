@@ -1,5 +1,5 @@
-#ifndef DEVIDE
-#define DEVIDE
+#ifndef DIVIDE
+#define DIVIDE
 class Solution {
 public:
 	int divide(int divided, int divisor);

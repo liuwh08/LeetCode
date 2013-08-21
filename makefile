@@ -3,7 +3,7 @@ CFLAGS=-c -Wall -std=c++11
 LDFLAGS=
 SOURCES=$(EXECUTABLE).cpp $(EXECUTABLE)_Test.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=divide
+EXECUTABLE=findSubstring
 
 all: $(SOURCES) $(EXECUTABLE)
 
