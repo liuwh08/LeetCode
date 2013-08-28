@@ -1,9 +1,9 @@
-#include "merge.h"
-#include <cstdlib>
+#include "insert.h"
 
 using namespace std;
 
-void Insert(Interval & a, vector<Interval> & intervals) {
+
+vector<Interval> Solution::insert(vector<Interval> & intervals, Interval a) {
 	bool overlap = false;
 	Interval current = a;
 	while(1) {
@@ -22,13 +22,6 @@ void Insert(Interval & a, vector<Interval> & intervals) {
 			break;
 	}
 	intervals.push_back(current);
+	return intervals;
 }
 
-vector<Interval> Solution::merge(vector<Interval>& intervals) {
-	vector<Interval> res;
-	for (int i = 0; i < intervals.size() ; ++i)
-	{
-		Insert(intervals[i], res);
-	}
-	return res;
-}
