@@ -3,7 +3,7 @@ CFLAGS=-c -Wall -std=c++11
 LDFLAGS=
 SOURCES=$(EXECUTABLE).cpp $(EXECUTABLE)_Test.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=exist
+EXECUTABLE=deleteDuplicates2
 
 all: $(SOURCES) $(EXECUTABLE)
 
